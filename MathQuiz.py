@@ -156,7 +156,4 @@ while choice != "q":
         i = 0
         choice = input("Press:\na for multiplication. \nb for addition. \nc for subtraction. \nd for division \nPress q at any time to quit\nYour choice: ")
 
-end = perf_counter()
-
-time = (end-start)
 print(time)
