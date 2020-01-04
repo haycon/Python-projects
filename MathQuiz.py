@@ -39,7 +39,6 @@ while choice != "q":
             
             answer = input("What is " + str(a) + " * " + str(b) + " ? ")
             solution = a*b
-            start = time.time()
             
             if(int(answer) ==  solution):
                 print("Correct!")
@@ -51,10 +50,8 @@ while choice != "q":
                 counter += 1
             i += 1
             
-        end = time.time()    
-        time = end-start
         print("You have " + str(points) + "/" + str(counter) + " answers correct! Good job :)\n")
-        print("You spent " + str(time) + " seconds.")
+
         i = 0
         choice = input("Press:\na for multiplication. \nb for addition. \nc for subtraction. \nd for division \nPress q at any time to quit\nYour choice: ")
         
